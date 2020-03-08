@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Form(props){
+function MyForm(props){
 return (
   <div className="container">
   <form>
@@ -25,4 +25,4 @@ return (
 );
 }
 
-export default Form;
+export default MyForm;
