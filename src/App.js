@@ -5,6 +5,10 @@ import MyNavBar from './components/MyNavBar'
 import MyHeader from './components/MyHeader';
 import Wrapper from "./components/Wrapper";
 
+import NoMatch from "./components/pages/NoMatch";
+import Search from "./components/pages/Search";
+import Saved from "./components/pages/Saved";
+
 class App extends Component {
  
   render() {
@@ -14,10 +18,10 @@ class App extends Component {
           <MyNavBar />
           <MyHeader />
           <Wrapper>
-          <Route exact path="/"  />
-          <Route exact path="/search"  />
-          <Route exact path="/saved"  />
-          <Route exact path="/noMatch"  />
+            <Route exact path="/" component={Search} />
+            <Route exact path="/search" component={Search} />
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/noMatch" component={NoMatch} />
         </Wrapper>
         </div>
       </Router>
