@@ -1,22 +1,43 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {Table, Button} from 'reactstrap';
 
-
-import MyNavBar from "./components/MyNavBar/index";
-
-
-import './App.css';
 
 class App extends Component {
  
   render() {
     return (
-      <Router>
-        <div>
-          <MyNavBar />
+      
+        <div className="App" container>
+            <Table>
+              <thead>
+                <tr>
+                  <th>authors</th>
+                  <th>description</th>
+                  <th>image</th>
+                  <th>link</th>
+                  <th>title</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Serguei</td>
+                  <td>Best book ever</td>
+                  <td>Image</td>
+                  <td>http://dd</td>
+                  <td>The sumer</td>
+                  <td>
+                    <Button color="success" size="sm">Edit</Button>
+                    <Button color="danger" size="sm">Delete</Button>
+                  </td>
+                </tr>
+              </tbody>
+            
+            </Table>
           
         </div>
-      </Router>
+      
     )
   };
 };
