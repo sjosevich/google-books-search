@@ -28,7 +28,7 @@ class App extends Component {
                   <td>http://dd</td>
                   <td>The sumer</td>
                   <td>
-                    <Button color="success" size="sm">Edit</Button>
+                    <Button color="success" size="sm" className="mr-2">Edit</Button>
                     <Button color="danger" size="sm">Delete</Button>
                   </td>
                 </tr>
